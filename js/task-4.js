@@ -9,7 +9,7 @@ form.addEventListener("submit", (event) => {
     password: password.value.trim(),
   };
 
-  if (userInfo.email === "" && userInfo.password === "") {
+  if (userInfo.email === "" || userInfo.password === "") {
     alert("All form fields must be filled in");
   } else {
     console.log(userInfo);
